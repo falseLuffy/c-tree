@@ -1,7 +1,15 @@
-###基于vue开发的树形图
+### 基于vue开发的树形图
 
-使用方法：
+### 可选参数
 ```
+   data:Array 
+   property:{name:'name',children:'children'}
+   icon:无
+```
+### 使用方法：
+```
+   <c-tree :data="data"></tree>
+
    import CTree from './c-tree.js'
    {
     components:{
@@ -14,9 +22,9 @@
    <script src="./c-tree.js"></script>
    <script>
     Vue.component('demo',{
-        template:'<div>
-         <c-tree :data="data"></tree>
-        </div>',
+        template:'<div>'+
+         '<c-tree :data="data"></tree>'+
+        '</div>',
         data:function(){
             return {
               data:[
