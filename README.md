@@ -8,9 +8,10 @@
 ```
 ### 使用方法：
 ```
-   <c-tree :data="data"></tree>
+   <c-tree :data="data" :property="property"></tree>
 
-   import CTree from './c-tree.js'
+   import CTree from './c-tree.js';
+
    {
     components:{
        CTree
@@ -23,7 +24,7 @@
    <script>
     Vue.component('demo',{
         template:'<div>'+
-         '<c-tree :data="data"></tree>'+
+         '<c-tree :data="data" :property="property"></tree>'+
         '</div>',
         data:function(){
             return {
@@ -73,6 +74,7 @@
                          ]
                       },
                    ],
+                 property:{name:'name',children:'children'}  
             }
         }
     })
