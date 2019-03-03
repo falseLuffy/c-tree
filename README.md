@@ -2,9 +2,9 @@
 
 ### 可选参数
 ```
-   data:Array 
-   property:{name:'name',children:'children'}
-   icon:无
+   data:Array  [{name:'',children:[]}]
+   property:Object  {name:'name',children:'children'}
+   icon:
 ```
 ### 使用方法：
 ```
