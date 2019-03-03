@@ -1,4 +1,4 @@
-基于vue开发的树形图
+###基于vue开发的树形图
 
 使用方法：
    import CTree from './c-tree.js'
@@ -8,6 +8,7 @@
     }
    }
    或
+   (```)
    <script src="./c-tree.js"></script>
    <script>
     Vue.component('demo',{
@@ -66,3 +67,5 @@
         }
     })
    </script>
+
+   (```)
